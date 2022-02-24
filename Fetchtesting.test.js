@@ -1,6 +1,7 @@
-test('the data is peanut butter', () => {
-    return fetchData().then(data => {
-      expect(data).toBe('peanut butter');
+
+test('description', () => {
+    return fetchData('put your tested URL here').then(data => {
+      expect(data).toBe('value your looking for');  //may use consints also?
     });
   });
 
