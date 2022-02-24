@@ -15,3 +15,28 @@ beforeEach(() => { //happens before each test;
   afterAll(() => {
     return clearCityDatabase();
   });
+
+  //here is the order of testing
+
+  // 1 - beforeAll
+// 1 - beforeEach
+// 1 - test
+// 1 - afterEach 
+// 2 - beforeAll (block scoped)
+// 1 - beforeEach
+// 2 - beforeEach (block scoped)
+// 2 - test (block scoped)
+// 2 - afterEach (block scoped)
+// 1 - afterEach
+// 2 - afterAll (block scoped)
+// 1 - afterAll
+
+
+describe('matching cities to foods', () => {
+    // Applies only to tests in this describe block. Description is for you;
+    beforeEach(() => {
+      return initializeFoodDatabase();
+    });
+
+    //.... additional tests
+})
