@@ -3,7 +3,6 @@
 Jest unit testing. Documentation can be found at jestjs.io# 
 
 and https://jestjs.io/docs/expect ,
- https://jestjs.io/docs/expect , 
 
 
 an example of a failed test: 
@@ -14,4 +13,4 @@ an example of a failed test:
 
   ● adding positive numbers is not zero
 
-    expect(received).not.toBe(expected) // Object.is equality
+  expect(received).not.toBe(expected) // Object.is equality
